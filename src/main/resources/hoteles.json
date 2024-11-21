@@ -1,0 +1,46 @@
+[ {
+  "id" : 1,
+  "nombre" : "Gran Hotel",
+  "telefono" : "981 22 22 22",
+  "ubicacion" : {
+    "latitud" : 42.880421,
+    "longitud" : -8.544844,
+    "direccion_completa" : "Avda. Rosalía de Castro, 50, Santiago de Compostela "
+  }
+}, {
+  "id" : 2,
+  "nombre" : "Hotel Rías Bajas",
+  "telefono" : "986 85 85 85",
+  "ubicacion" : {
+    "latitud" : 42.430786,
+    "longitud" : -8.644914,
+    "direccion_completa" : "Calle Daniel de la Sota, 1, Pontevedra"
+  }
+}, {
+  "id" : 3,
+  "nombre" : "Hotel Playa de Vigo",
+  "telefono" : "986 55 55 55",
+  "ubicacion" : {
+    "latitud" : 42.211217,
+    "longitud" : -8.748758,
+    "direccion_completa" : "Avenida Samil, 95, Vigo"
+  }
+}, {
+  "id" : 4,
+  "nombre" : "Parador de Ribadeo",
+  "telefono" : "982 12 12 12",
+  "ubicacion" : {
+    "latitud" : 43.536788,
+    "longitud" : -7.036915,
+    "direccion_completa" : "Calle Amador Fernández, 7, Ribadeo"
+  }
+}, {
+  "id" : 5,
+  "nombre" : "Hotel Termas de Ourense",
+  "telefono" : "988 33 33 33",
+  "ubicacion" : {
+    "latitud" : 42.337912,
+    "longitud" : -7.863159,
+    "direccion_completa" : "Rúa das Burgas, 11, Ourense"
+  }
+} ]

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hoteles>
+    <hotel id="1">
+        <nombre>Gran Hotel</nombre>
+        <telefono>981 22 22 22</telefono>
+        <direccion>
+            <detalles>Avda. Rosalía de Castro, 50, Santiago de Compostela </detalles>
+            <latitud>42.880421</latitud>
+            <longitud>-8.544844</longitud>
+        </direccion>
+    </hotel>
+    <hotel id="2">
+        <nombre>Hotel Rías Bajas</nombre>
+        <telefono>986 85 85 85</telefono>
+        <direccion>
+            <detalles>Calle Daniel de la Sota, 1, Pontevedra</detalles>
+            <latitud>42.430786</latitud>
+            <longitud>-8.644914</longitud>
+        </direccion>
+    </hotel>
+    <hotel id="3">
+        <nombre>Hotel Playa de Vigo</nombre>
+        <telefono>986 55 55 55</telefono>
+        <direccion>
+            <detalles>Avenida Samil, 95, Vigo</detalles>
+            <latitud>42.211217</latitud>
+            <longitud>-8.748758</longitud>
+        </direccion>
+    </hotel>
+    <hotel id="4">
+        <nombre>Parador de Ribadeo</nombre>
+        <telefono>982 12 12 12</telefono>
+        <direccion>
+            <detalles>Calle Amador Fernández, 7, Ribadeo</detalles>
+            <latitud>43.536788</latitud>
+            <longitud>-7.036915</longitud>
+        </direccion>
+    </hotel>
+    <hotel id="5">
+        <nombre>Hotel Termas de Ourense</nombre>
+        <telefono>988 33 33 33</telefono>
+        <direccion>
+            <detalles>Rúa das Burgas, 11, Ourense</detalles>
+            <latitud>42.337912</latitud>
+            <longitud>-7.863159</longitud>
+        </direccion>
+    </hotel>
+</hoteles>
