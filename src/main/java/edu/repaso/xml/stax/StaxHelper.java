@@ -30,6 +30,14 @@ import edu.repaso.xml.modelo.Hotel;
 
 public class StaxHelper {
 
+    /**
+     * Escribe en un fichero pathDestino la lista de hoteles de entrada con Stax
+     * @param pathDestino ruta del fichero de destino
+     * @param hoteles lista de hoteles
+     * @throws XMLStreamException en caso de que se genere internamente durante el proceso
+     * @throws TransformerException en caso de que se genere internamente durante el proceso
+     * @throws IOException en caso de que se genere internamente durante el proceso
+     */
     public static void writeXmlIterator(String pathDestino, ArrayList<Hotel> hoteles)
             throws XMLStreamException, TransformerException, IOException {
 

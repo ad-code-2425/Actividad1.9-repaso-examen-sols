@@ -20,7 +20,7 @@ public class Main2 {
         ArrayList<Hotel> hoteles = new ArrayList<>();
 
         try {
-            hoteles = DomHelper.leer(pathOrigen);
+            hoteles = DomHelper.leerXML(pathOrigen);
 
             for (Hotel hotel : hoteles) {
                 System.out.println(hotel);

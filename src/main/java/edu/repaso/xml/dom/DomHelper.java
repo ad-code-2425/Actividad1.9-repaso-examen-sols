@@ -29,6 +29,12 @@ import edu.repaso.xml.modelo.Hotel;
 
 public class DomHelper {
 
+    /**
+     * Genera un objeto Document que representa en memoria el documento XML con los datos del parámetro hoteles
+     * @param hoteles Lista de hoteles
+     * @return objeto Document
+     * @throws ParserConfigurationException en caso de error
+     */
     public static Document generarDOM(ArrayList<Hotel> hoteles) throws ParserConfigurationException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -81,6 +87,12 @@ public class DomHelper {
         node.appendChild(nodeTexto);
     }
 
+    /**
+     * Crea un fichero en la ubicación indicada pro fileDestino a partir de un objeto Document en memoria
+     * @param document objeto que se transcibirá al fichero de fileDestino
+     * @param fileDestino ruta al fichero de destino
+     * @throws TransformerException en caso de que surja durante la operación
+     */
     public static void escribirDOM(Document document, String fileDestino) throws TransformerException {
         // Para generar un documento XML con un objeto Document
         // Generar el tranformador para obtener el documento XML en un fichero
@@ -102,7 +114,15 @@ public class DomHelper {
         transformador.transform(origen, destino);
     }
 
-    public static ArrayList<Hotel> leer(String filePath) throws ParserConfigurationException, SAXException, IOException {
+    /**
+     * Lee un archivo XML de la ubicacion indicada en filePath
+     * @param filePath ubicacion del archivo a leer
+     * @return ArrayList<Hotel> con la representación de la información contenida en el fichero
+     * @throws ParserConfigurationException
+     * @throws SAXException
+     * @throws IOException
+     */
+    public static ArrayList<Hotel> leerXML(String filePath) throws ParserConfigurationException, SAXException, IOException {
         Integer id = 0;
        
         String nombre;
