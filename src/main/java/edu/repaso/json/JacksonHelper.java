@@ -29,21 +29,22 @@ public class JacksonHelper {
     }
 
     public static ArrayList<Hotel> leerJSON(String file) throws IOException {
-
-        BufferedReader reader = new BufferedReader(new FileReader(new File(file)));
         StringBuffer buffer = new StringBuffer();
         ArrayList<Hotel> hoteles = new ArrayList<>();
 
         String line = null;
-        while (((line = reader.readLine()) != null)) {
-            buffer.append(line);
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File(file)));) {
+            while (((line = reader.readLine()) != null)) {
+                buffer.append(line);
+            }
+            String file_json_string = buffer.toString();
+
+            var mapper = new ObjectMapper();
+
+            hoteles = (ArrayList<Hotel>) mapper.readValue(file_json_string, new TypeReference<List<Hotel>>() {
+            });
         }
-        String file_json_string = buffer.toString();
-
-        var mapper = new ObjectMapper();
-
-         hoteles =(ArrayList<Hotel>) mapper.readValue(file_json_string, new TypeReference<List<Hotel>>() {
-        });
         return hoteles;
 
     }
